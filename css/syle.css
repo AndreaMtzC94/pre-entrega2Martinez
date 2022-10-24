@@ -131,6 +131,14 @@ footer div p {
     margin-top: 10px;
 }
 
+.politicas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+    padding: 0px;
+}
+
 /* Secciones Principales - Heroe */
 body {
     background-color: #fcfeff;
@@ -139,9 +147,7 @@ body {
 .principal {
     text-align: center;
     background-color: #fcfeff;
-    width: 70vw;
-    max-width: 1500px;
-    min-width: 300px;
+    width: 70vw;   
     margin: 0 auto;
     padding: 2em;
 }
@@ -160,7 +166,7 @@ h2 {
 .inicio {
     background-image: url(../img/inicioHeroe.jpg) ;
     width: 100%;
-    height: calc(100vh - 10px);
+    height: calc(100vh);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -198,12 +204,15 @@ main section h1 {
     background-image: url(../img/destinosHeroe.jpg);
     width: 100%;
     height: calc(100vh);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+.galeria {
+    margin-bottom: 20px;
+}
 .gridGaleria {
     width: 100%;
     margin: 25px;
@@ -265,6 +274,80 @@ main section h1 {
     
 }
 
+.boton {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #5b4a72;
+    transition: 1s;
+}
+
+.primario {
+    background-color: #5b4a72;
+    color: white;
+    
+}
+
+.secundario {
+    background-color: white;
+    color: #5b4a72;
+    
+}
+
+.boton.primario:hover{
+    color: white;
+    background-color: #5b4a72;
+}
+
+.boton.secundario:hover{
+    color: white;
+    background-color: #5b4a72;
+}
+
+.icono {
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+}
+
+.iconosInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+    width: 40%;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.descubre {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+
+.imagenes {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
 
 /* -------PAGINA VUELOS -------- */
 
@@ -272,7 +355,7 @@ main section h1 {
     background-image: url(../img/vuelosHeroe.jpg);
     width: 100%;
     height: calc(100vh);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -297,7 +380,7 @@ main section h1 {
     background-image: url(../img/blogHeroe.jpg);
     width: 100%;
     height: calc(100vh);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -357,7 +440,7 @@ h3 {
     background-image: url(../img/contactoHeroe.jpg);
     width: 100%;
     height: calc(100vh);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -372,10 +455,6 @@ fieldset {
     position: center;
     width: 500px;
     height: 530px;
-    max-width: 800px;
-    min-width: 500px;
-    max-height: 800px;
-    min-height: 530px;
 }
 
 hr {
@@ -405,8 +484,8 @@ select, textarea {
     min-height: 30px;
 }
 
+
 input[type=submit] {
-    display: block;
     width: 30%;
     margin: 2px;
     margin-left: 295px;
@@ -416,6 +495,8 @@ input[type=submit] {
     color: white;
     font-size: 15px;
 }
+
+
 
 
 /*---------- MEDIA QUERIES -----------*/
@@ -448,12 +529,66 @@ input[type=submit] {
 
 }
 
+@media screen and (max-width:1024px) {
+    .boton {
+        width: 250px;
+        height: 35px;
+    }
+}
 
 /*----Esta afecta la barra de navegación, footer, seccion principal (heroe 1)---*/
 @media screen and (max-width: 850px) {
     header nav ul li {
         padding: 0 20px;
     }
+
+    .principal {
+        width: 80%;
+    }
+
+    input, select, textarea {
+        display: flex;
+        margin: 5px;
+        width: 98%
+    }
+
+    input[type=submit] {
+        margin: 2px;
+        width: 98%;
+        justify-content: center;
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    fieldset {
+        border: 0px;
+        width: 100%;
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .descubre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenes {
+        margin: 20px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .iconosInfo {
+        width: 90%;
+    }
+    .iconos {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -539,12 +674,20 @@ footer div p {
     .heroe h1 {
         font-size: 70px;
     }
+
+    .principal {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 600px) {
 
     .heroe h1 {
         font-size: 60px;
+    }
+
+    .imagenes{
+        width: 300px;
     }
 }
 
@@ -553,14 +696,26 @@ footer div p {
     .heroe h1 {
         font-size: 50px;
     }
+
+    .principal {
+        width: 100%;
+        padding: 0px;
+    }
+
+    fieldset {
+        margin: 0px 0px 20px 0px; 
+    }
+    
 }
 
 /*----Esta afecta las paginas: Destinos ---*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     
     .gridGaleria {
         grid-template-columns: 1fr;
+        width:90%;
+        margin: auto;
     }
 
     .gridItem {
@@ -578,6 +733,13 @@ footer div p {
         font-size: 35px;
         text-shadow: 3px 3px black;
     }
+}
+
+@media screen and (max-width:390px) {
+    .imagenes {
+        width: 250px;
+    }
+    
 }
 
 
