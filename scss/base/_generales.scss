@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ICONOS, REDES SOCIALES, LOGO, MENÚ HAMBURGUESA */
+
+.logo {
+    width: 70px;
+    height: auto;
+    padding: 0px 10px;
+}
+
+.social {
+    width: 30px;
+    height: auto; 
+    display: inline;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: nth($colores, 3);
+    transition: 0.3s;
+}
+
+a:hover {
+    color: nth($colores, 4);
+}
+
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: nth($colores, 3);
+}

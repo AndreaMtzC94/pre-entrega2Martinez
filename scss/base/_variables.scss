@@ -1,0 +1,107 @@
+
+/* ----LISTAS----*/
+
+$colores:
+    #faf7de, /* 1.  Heroe section - Títulos*/
+    #5b4a72, /* 2. Main section - Títulos */
+    #deefef, /* 3. Barra de nav y footer - color de letra */
+    #3a81bc, /* 4. hover */
+    #40526178, /* 5. background color Barra de nav */
+    #405261fc, /* 6. background color foooter */
+    white, /* 7. Botones secundarios + color de letra de boton principal */
+    black, /* 8. titulos secundarios, letras */
+    #d7d7d7, /* 9. bordes */
+    #767474, /* 10. algunas letras (formulario contacto) */
+    #fcfeff; /* 11. background color */
+
+$font-size: 
+    85px, /* 1. Heroe Título*/
+    40px, /* 2. Títulos principales Main */
+    18px, /* 3. barra de nav */
+    15px, /* 4. botones */
+    12px; /* 5. footer */
+
+
+$font-family:
+    'Quicksand', sans-serif, /* Heroe, nav, footer */
+    'Roboto', sans-serif, /* Titulos principales en Main */
+    'Bebas Neue', cursive; /*formulario, botones */
+
+
+/*----EXTEND----*/
+%heroeImg {
+    width: 100%;
+    height: calc(100vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+
+%heroeTitulo {
+    color: nth($colores, 1);
+    text-shadow: 10px 8px 5px black;
+    font-family: nth($font-family, 1);
+    font-size: nth($font-size, 1);
+    font-weight: 200px;
+    text-align: center;
+    padding: 100px 50px;
+    bottom: 0px;
+    position: absolute;
+}
+
+%titulos {
+    color: nth($colores, 2);
+    font-family: nth($font-family, 2);
+    font-size: nth($font-size, 2);
+    text-align: left;
+    padding: 10px;
+}
+
+%principal {
+    text-align: center;
+    background-color: nth($colores, 11);
+    width: 70vw;   
+    margin: 0 auto;
+    padding: 2em;
+}
+
+%boton {
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+    font-size: nth($font-size, 4);
+    font-family: nth($font-family, 3);
+    border-radius: 10px;
+    border: 2px solid #5b4a72;
+    transition: 1s;
+}
+
+%input {
+    margin: 2px;
+    padding: 5px;
+    width: 90%;
+    min-height: 20px;
+    border: .5px solid nth($colores, 9);
+    font-family: 'Roboto', sans-serif;
+    color: nth($colores, 10);
+}
+
+
+%forms {
+    background-color: white;
+    border-radius: 15%;
+    padding: 20px;
+    margin: 0px auto;
+    border: 1px solid #d7d7d7;
+    position: center;
+}
+
+/* MIXINS */ 
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

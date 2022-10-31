@@ -1,0 +1,584 @@
+@charset "UTF-8";
+/* ----LISTAS----*/
+/* 11. background color */
+/* 5. footer */
+/*formulario, botones */
+/*----EXTEND----*/
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+main .heroe {
+  width: 100%;
+  height: calc(100vh);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+main section h1 {
+  color: #faf7de;
+  text-shadow: 10px 8px 5px black;
+  font-family: "Quicksand";
+  font-size: 85px;
+  font-weight: 200px;
+  text-align: center;
+  padding: 100px 50px;
+  bottom: 0px;
+  position: absolute; }
+
+main .principal section h2, main .principal .galeria h2, main .principal h2, main .principal .formulario h2 {
+  color: #5b4a72;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: left;
+  padding: 10px; }
+
+main .principal {
+  text-align: center;
+  background-color: #fcfeff;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 2em; }
+
+main .principal section div .boton {
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  font-family: "Roboto";
+  border-radius: 10px;
+  border: 2px solid #5b4a72;
+  transition: 1s; }
+
+main .principal .viajes .viajesContenedor div input, main .principal .viajes .viajesContenedor .pasajeros div select, main .principal .formulario form div label input, main .principal .formulario form div select, main .principal .formulario form div textarea {
+  margin: 2px;
+  padding: 5px;
+  width: 90%;
+  min-height: 20px;
+  border: 0.5px solid #d7d7d7;
+  font-family: 'Roboto', sans-serif;
+  color: #767474; }
+
+main .principal .viajes, main .principal .formulario {
+  background-color: white;
+  border-radius: 15%;
+  padding: 20px;
+  margin: 0px auto;
+  border: 1px solid #d7d7d7;
+  position: center; }
+
+/* MIXINS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ICONOS, REDES SOCIALES, LOGO, MENÚ HAMBURGUESA */
+.logo {
+  width: 70px;
+  height: auto;
+  padding: 0px 10px; }
+
+.social {
+  width: 30px;
+  height: auto;
+  display: inline;
+  padding: 2px; }
+
+a {
+  text-decoration: none;
+  color: #deefef;
+  transition: 0.3s; }
+
+a:hover {
+  color: #3a81bc; }
+
+.hamburguesa {
+  display: none;
+  cursor: pointer; }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #deefef; }
+
+/*--BARRA DE NAVEGACIÓN--*/
+header {
+  margin: 0;
+  padding: 20px;
+  font-family: "Quicksand";
+  font-size: 18px;
+  background-color: #40526178;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      padding: 0 40px; }
+
+/*---- FOOTER ----*/
+footer {
+  background-color: #405261fc;
+  font-family: "Quicksand";
+  font-size: 12px;
+  color: #deefef;
+  padding: 20px; }
+  footer .footer {
+    display: flex;
+    justify-content: space-evenly; }
+    footer .footer .agencia {
+      display: flex; }
+      footer .footer .agencia div p {
+        padding: 5px; }
+      footer .footer .agencia div div {
+        display: flex;
+        justify-content: center; }
+    footer .footer .politicas {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 5px;
+      gap: 5px; }
+    footer .footer div div a {
+      display: flex;
+      align-items: center;
+      gap: 5px; }
+  footer .derechosAutor {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; }
+
+/*--FONTS--*/
+/* HEROE SECTION - SECCIÓN PRINCIPAL */
+/* ----LISTAS----*/
+/* 11. background color */
+/* 5. footer */
+/*formulario, botones */
+/*----EXTEND----*/
+main .heroe {
+  width: 100%;
+  height: calc(100vh);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+main section h1 {
+  color: #faf7de;
+  text-shadow: 10px 8px 5px black;
+  font-family: "Quicksand";
+  font-size: 85px;
+  font-weight: 200px;
+  text-align: center;
+  padding: 100px 50px;
+  bottom: 0px;
+  position: absolute; }
+
+main .principal section h2, main .principal .galeria h2, main .principal h2, main .principal .formulario h2 {
+  color: #5b4a72;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: left;
+  padding: 10px; }
+
+main .principal {
+  text-align: center;
+  background-color: #fcfeff;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 2em; }
+
+main .principal section div .boton {
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  font-family: "Roboto";
+  border-radius: 10px;
+  border: 2px solid #5b4a72;
+  transition: 1s; }
+
+main .principal .viajes .viajesContenedor div input, main .principal .viajes .viajesContenedor .pasajeros div select, main .principal .formulario form div label input, main .principal .formulario form div select, main .principal .formulario form div textarea {
+  margin: 2px;
+  padding: 5px;
+  width: 90%;
+  min-height: 20px;
+  border: 0.5px solid #d7d7d7;
+  font-family: 'Roboto', sans-serif;
+  color: #767474; }
+
+main .principal .viajes, main .principal .formulario {
+  background-color: white;
+  border-radius: 15%;
+  padding: 20px;
+  margin: 0px auto;
+  border: 1px solid #d7d7d7;
+  position: center; }
+
+/* MIXINS */
+main .inicio {
+  background-image: url(../img/inicioHeroe.jpg); }
+
+main .destinos {
+  background-image: url(../img/destinosHeroe.jpg); }
+
+main .vuelos {
+  background-image: url(../img/vuelosHeroe.jpg); }
+
+main .blog {
+  background-image: url(../img/blogHeroe.jpg); }
+
+main .contactoPrincipal {
+  background-image: url(../img/contactoHeroe.jpg); }
+
+/*---- PÁGINA DESTINOS ----*/
+main .principal section h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400px; }
+
+main .principal section div .boton {
+  position: relative;
+  display: inline-block; }
+
+main .principal section div .primario {
+  background-color: #5b4a72;
+  color: white; }
+
+main .principal section div .secundario {
+  background-color: white;
+  color: #5b4a72; }
+  main .principal section div .secundario:hover {
+    color: white;
+    background-color: #5b4a72; }
+
+main .principal section div .descubre {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: left; }
+  main .principal section div .descubre .imagenes {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px; }
+
+main .principal section div div .descubre {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: left; }
+
+main .principal section div div .iconos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  main .principal section div div .iconos .iconosInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+    width: 40%; }
+    main .principal section div div .iconos .iconosInfo .icono {
+      width: 80px;
+      height: 80px;
+      margin: 15px; }
+
+main .principal .galeria {
+  margin-bottom: 20px; }
+  main .principal .galeria h2 {
+    font-family: 'Bebas Neue', cursive; }
+  main .principal .galeria .gridGaleria {
+    width: 100%;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 5px; }
+    main .principal .galeria .gridGaleria div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 1s;
+      border-radius: 10px; }
+      main .principal .galeria .gridGaleria div img:hover {
+        transform: scale(1.05); }
+    main .principal .galeria .gridGaleria .imgUno {
+      grid-row: span 2; }
+    main .principal .galeria .gridGaleria .imgDos {
+      grid-column: span 2; }
+    main .principal .galeria .gridGaleria .imgCuatro {
+      grid-row: span 2; }
+    main .principal .galeria .gridGaleria .imgCinco {
+      grid-column: span 2;
+      grid-row: span 2; }
+    main .principal .galeria .gridGaleria .imgSeis {
+      grid-row: span 2; }
+    main .principal .galeria .gridGaleria .imgSiete {
+      grid-column: span 2; }
+
+/*---- PÁGINA VUELOS ----*/
+main .principal .viajes {
+  width: 500px;
+  height: 600px; }
+  main .principal .viajes .viajesContenedor {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px; }
+    main .principal .viajes .viajesContenedor div {
+      margin: 2px; }
+      main .principal .viajes .viajesContenedor div label {
+        font-family: sans-serif;
+        display: block;
+        text-align: left;
+        padding: 2px 20px; }
+      main .principal .viajes .viajesContenedor div input {
+        width: 400px; }
+      main .principal .viajes .viajesContenedor div p {
+        font-family: sans-serif;
+        display: block;
+        text-align: left;
+        padding: 2px 20px; }
+    main .principal .viajes .viajesContenedor .pasajeros div select {
+      width: 195px; }
+    main .principal .viajes .viajesContenedor .buscar input {
+      background-color: #5b4a72;
+      color: white;
+      border-radius: 10px;
+      border: 2px solid #5b4a72;
+      font-size: 15px; }
+
+/*---- PÁGINA BLOG ----*/
+main .principal h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400px; }
+
+main .blogContenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  main .blogContenedor .blogTarjetas {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 1s; }
+    main .blogContenedor .blogTarjetas:hover {
+      transform: scale(1.1); }
+    main .blogContenedor .blogTarjetas .blogImg {
+      width: 298px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0px 0px; }
+    main .blogContenedor .blogTarjetas h3 {
+      color: black;
+      padding: 25px 10px 10px 10px;
+      text-align: left; }
+    main .blogContenedor .blogTarjetas .texto {
+      color: black;
+      padding: 5px 5px 5px 25px;
+      text-align: left; }
+
+main .blogContenedor::after {
+  width: 300px;
+  content: " ";
+  margin: 15px; }
+
+/*---- PÁGINA CONTACTO ----*/
+main .principal .formulario {
+  width: 500px;
+  height: 530px; }
+  main .principal .formulario h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400px; }
+  main .principal .formulario hr {
+    height: 2px;
+    background-color: #deefef;
+    border-color: #deefef;
+    margin-bottom: 10px; }
+  main .principal .formulario form div label {
+    display: block;
+    margin: 2px; }
+  main .principal .formulario form div select {
+    width: 89%;
+    min-height: 30px; }
+  main .principal .formulario form div textarea {
+    width: 89%;
+    min-height: 30px; }
+  main .principal .formulario form div input[type=submit] {
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #5b4a72;
+    margin: 2px;
+    margin-left: 280px;
+    color: white;
+    background-color: #5b4a72;
+    font-size: 15px;
+    font-family: sans-serif; }
+
+/*---------- MEDIA QUERIES -----------*/
+/*----Esta afecta las paginas: DESTINOS ---*/
+@media screen and (max-width: 1100px) {
+  main .principal .galeria .gridGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px; }
+    main .principal .galeria .gridGaleria .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+    main .principal .galeria .gridGaleria .imgUno {
+      grid-row: span 2; }
+    main .principal .galeria .gridGaleria .imgCuatro {
+      grid-row: span 2; }
+    main .principal .galeria .gridGaleria .imgSeis {
+      grid-row: span 2; } }
+
+@media screen and (max-width: 1024px) {
+  main .principal section div .boton {
+    width: 250px;
+    height: 35px; } }
+
+/*----Esta afecta la barra de navegación, seccion principal (main) y la galeria de DESTINOS ---*/
+@media screen and (max-width: 850px) {
+  header nav ul li {
+    padding: 0 20px; }
+  main .principal {
+    width: 100%; }
+    main .principal .galeria .gridGaleria {
+      margin: 5px auto; } }
+
+/*----Esta afecta la barra de navegación, seccion principal (main) y la galeria de DESTINOS ---*/
+@media screen and (max-width: 770px) {
+  /*--- BARRA DE NAVEGACIÓN ---*/
+  header nav .navMenu {
+    position: absolute;
+    left: -100%;
+    top: 95px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #40526178;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s; }
+    header nav .navMenu.active {
+      left: 0; }
+  header .hamburguesa {
+    display: block; }
+    header .hamburguesa.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg); }
+    header .hamburguesa.active .bar:nth-child(2) {
+      opacity: 0; }
+    header .hamburguesa.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg); }
+    header .hamburguesa.active .bar:nth-child(4) {
+      opacity: 0; }
+    header .hamburguesa.active .bar:nth-child(5) {
+      opacity: 0; }
+  /*-- Footer --*/
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; }
+    footer .footer .agencia div p {
+      display: none; }
+    footer .footer .agenciaInfo {
+      display: none; }
+  footer .social {
+    display: flex;
+    padding: 5px 5px;
+    width: 55px; }
+  /*---- SECCIÓN HEROE ----*/
+  .heroe h1 {
+    font-size: 70px;
+    padding: 50px 25px;
+    text-shadow: 5px 5px black;
+    bottom: 100px; }
+  /*---- DESTINOS MAIN ----*/
+  main .principal section div .descubre {
+    display: flex;
+    flex-direction: column; }
+    main .principal section div .descubre .imagenes {
+      margin: 20px auto;
+      width: 500px; } }
+
+/*----Esta afecta la pagina de DESTINOS ---*/
+@media screen and (max-width: 630px) {
+  main .principal section div .descubre .imagenes {
+    width: 350px; }
+  main .principal section div div .iconos {
+    display: flex;
+    flex-direction: column; }
+    main .principal section div div .iconos .iconosInfo {
+      width: 90%; } }
+
+/*----Esta afecta la galería de DESTINOS ---*/
+@media screen and (max-width: 570px) {
+  main .principal .galeria .gridGaleria {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto; }
+    main .principal .galeria .gridGaleria .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  /*----VUELOS----*/
+  main .heroe h1 {
+    font-size: 60px;
+    padding: 0px;
+    margin-left: 10px; }
+  main .principal section h2 {
+    font-size: 35px; }
+  main .principal .viajes {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: #fcfeff; }
+    main .principal .viajes .viajesContenedor {
+      padding: 0px; }
+      main .principal .viajes .viajesContenedor div input {
+        width: 90%; }
+      main .principal .viajes .viajesContenedor .pasajeros div select {
+        width: 44%; }
+  main .principal .formulario {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: #fcfeff; }
+    main .principal .formulario form .enviar input[type=submit] {
+      width: 90%;
+      margin: 2px; } }
+
+@media screen and (max-width: 440px) {
+  /*----TÍTULOS HEROE----*/
+  main .heroe h1 {
+    font-size: 50px; }
+  main .inicio h1 {
+    font-size: 42px; }
+  main .principal fieldset h2 {
+    font-size: 30px; }
+  main .principal section div .descubre {
+    margin: auto;
+    margin-top: 10px; }
+    main .principal section div .descubre .imagenes {
+      width: 280px;
+      margin: 10px auto; } }

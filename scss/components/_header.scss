@@ -1,0 +1,26 @@
+/*--BARRA DE NAVEGACIÓN--*/
+
+
+header {
+    margin: 0;
+    padding: 20px;
+    font-family: nth($font-family, 1);
+    font-size: nth($font-size, 3);
+    background-color: nth($colores, 5);
+    width: 100%;
+    @include flex (flex, space-between, center);
+    position: absolute;
+    z-index: 1;
+        
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+
+                li {
+                    padding: 0 40px;
+                }
+            }
+        }
+}
+

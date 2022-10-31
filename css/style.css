@@ -61,10 +61,6 @@ a    {
     transition: 0.3s;
 }
 
-a:active {
-    color: #2a6799;
-}
-
 a:hover {
     color: #3a81bc;
 }
@@ -106,15 +102,6 @@ footer div p {
     justify-content: flex-start;
 }
 
-.agenciaRedes {
-    display: flex;
-    justify-content: center;
-}
-
-.agenciaInfo {
-    display: flex;
-    justify-content: flex-start;
-}
 
 .agencia {
     display: flex;
@@ -122,7 +109,7 @@ footer div p {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .derechosAutor {
